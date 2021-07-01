@@ -1,4 +1,5 @@
 require('dotenv').config();
+const http = require('http');
 
 const Discord = require('discord.js');
 const Client = Discord.Client;
@@ -71,3 +72,4 @@ client.on('messageReactionRemove', (messageReaction, user)=>{
     }
 })
 client.login(process.env.DISCORDJS_BOT_TOKEN);
+http.createServer((req, res)=>{}).listen(process.env.PORT || 5000)
