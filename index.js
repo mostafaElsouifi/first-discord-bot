@@ -4,7 +4,7 @@ const http = require('http');
 const Discord = require('discord.js');
 const Client = Discord.Client;
 const client = new Client({
-    partials: ["MESSAGE", "REACTION"]
+    partials:["MESSAGE", "REACTION"]
 });
 
 const PREFIX = '$';
